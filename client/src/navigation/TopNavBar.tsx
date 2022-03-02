@@ -1,20 +1,17 @@
 import { Component } from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 class TopNavBar extends Component {
     render() {
         return (
-            <Navbar expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#/">Amir Davoody</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Item>
-                        <Nav.Link href="#/about">About</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <Nav>
+                <Nav.Item>
+                    <Nav.Link href="#/"><h1>Amir Davoody</h1></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="#/about">About</Nav.Link>
+                </Nav.Item>
+            </Nav>
         );
     }
 }

@@ -1,5 +1,6 @@
-@import "~bootstrap/scss/bootstrap";
+$theme-colors: (
+  "primary": #ffa864,
+  "danger": #ff4136
+);
 
-.App {
-  text-align: center;
-}
+@import "~bootstrap/scss/bootstrap";

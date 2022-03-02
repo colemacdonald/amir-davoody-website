@@ -1,6 +1,51 @@
+$primary-colour: #FFA864;
+$secondary-colour: white;
+$background-colour: #282c34;
+
 $theme-colors: (
-  "primary": #ffa864,
+  "primary": $primary-colour,
   "danger": #ff4136
 );
+
+.App {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $background-colour;
+  color: $secondary-colour;
+
+  h1 {
+    color: $primary-colour;
+  }
+
+  h2 {
+    color: $primary-colour;
+  }
+
+  .small-line {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .hide-after::after {
+    content: none;
+  }
+
+  .nav-bar {
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+    a:link {
+      text-decoration: none;
+    }
+  }
+
+  .main {
+    padding: 20px;
+  }
+}
 
 @import "~bootstrap/scss/bootstrap";

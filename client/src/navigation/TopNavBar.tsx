@@ -1,17 +1,23 @@
 import { Component } from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 
 class TopNavBar extends Component {
     render() {
         return (
-            <Nav>
-                <Nav.Item>
-                    <Nav.Link href="#/"><h1>Amir Davoody</h1></Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="#/about">About</Nav.Link>
-                </Nav.Item>
-            </Nav>
+            <div className="nav-bar">
+                <a href="#/"><h1>Amir Davoody</h1></a>
+
+                <Dropdown className="ml-auto">
+                     <Dropdown.Toggle className="hide-after">
+                         <div className="small-line"/>
+                         <div className="small-line"/>
+                         <div className="small-line"/>
+                     </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/about">About</Dropdown.Item>
+                    </Dropdown.Menu>
+                 </Dropdown>
+            </div>
         );
     }
 }
